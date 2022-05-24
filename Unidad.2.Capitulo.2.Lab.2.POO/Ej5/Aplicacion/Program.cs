@@ -1,12 +1,14 @@
 ﻿using System;
+using ClassLibrary;
 
-namespace LabClases1
+namespace Aplicacion
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+            Juego j = new Juego();
+            j.ComenzarJuego();
         }
     }
 }

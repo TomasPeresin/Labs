@@ -4,12 +4,7 @@ namespace Clases
 {
     public class A
     {
-        private string NombreInstancia;
-        public string _nombreInstancia
-        {
-            get { return NombreInstancia; }
-            set { NombreInstancia = value;}
-        }
+        public String NombreInstancia { get; set; }
 
         public A()
         {
