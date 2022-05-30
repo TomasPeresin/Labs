@@ -26,8 +26,8 @@ namespace UI.Desktop
             //if (this.txtUsuario.Text == "Admin" && this.txtPass.Text == "admin")
             if (UsuarioLogico.Ingreso(this.txtUsuario.Text, this.txtPass.Text))
             {
-                //    MessageBox.Show("Usted ha ingresado al sistema correctamente."
-                //    , "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Usted ha ingresado al sistema correctamente."
+                 , "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
             }
             else

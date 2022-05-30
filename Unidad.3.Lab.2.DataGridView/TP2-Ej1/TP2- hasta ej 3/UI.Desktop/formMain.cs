@@ -29,6 +29,8 @@ namespace UI.Desktop
             {
                 this.Dispose();
             }
+            formListaUsuarios appLista = new formListaUsuarios();
+            appLista.ShowDialog();
         }
     }
 }

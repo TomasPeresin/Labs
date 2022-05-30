@@ -17,7 +17,8 @@ namespace UI.Desktop
         {
             InitializeComponent();
             this.oUsuarios = new UsuarioLogic();
-            this.dgvUsuarios.DataSource = this.oUsuarios.GetAll();
+            DataTable s = oUsuarios.GetAll();
+            this.dgvUsuarios.DataSource = s;
         }
 
         public UsuarioLogic oUsuarios { get; set; }

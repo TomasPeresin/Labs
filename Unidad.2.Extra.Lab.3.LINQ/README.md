@@ -8,9 +8,11 @@ Familiarizarse con el uso de LINQ to Objects
 
 ### Pasos
 1. Completar la implementación en la función correspondiente de la clase ***FuncionesLinq***
-2. En la clase ***FuncionesLinqTest*** ir a ***Prueba***/***Ejecutar todas las pruebas*** de la barra de herramientas de VS. Esto es para verificar que la implementación cumpla con las especificaciones requeridas
+2. En la clase ***FuncionesLinqTest*** ir a ***Prueba***/***Ejecutar todas las pruebas*** de la barra de herramientas de VS. 
+Esto es para verificar que la implementación cumpla con las especificaciones requeridas
 
-> Si los tests automatizados en ***FuncionesLinqTest*** pasan no es necesario llamar a todas las funciones por consola, esto representa la típica práctica de testing manual
+> Si los tests automatizados en ***FuncionesLinqTest*** pasan no es necesario llamar a todas las funciones por consola, 
+esto representa la típica práctica de testing manual
 
 ### Ejercicios
 1. Dado un Array que incluya todas las Provincias de Argentina usar LINQ para obtener y mostrar
