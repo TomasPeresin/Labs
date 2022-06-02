@@ -36,7 +36,7 @@ namespace Data.Database
             
             this.DaUsuarios.InsertCommand =
             new SqlCommand("INSERT INTO usuarios(tipo_doc,nro_doc,fecha_nac,apellido,nombre,direccion,telefono,email,celular," +
-            "usuario,clave VALUES (@tipo_doc,@nro_doc,@fecha_nac,@apellido,@nombre,@direccion,@telefono,@email,@celular," +
+            "usuario,clave) VALUES (@tipo_doc,@nro_doc,@fecha_nac,@apellido,@nombre,@direccion,@telefono,@email,@celular," +
             "@usuario,@clave)", this.Conn);
             this.DaUsuarios.InsertCommand.Parameters.Add("@tipo_doc", System.Data.SqlDbType.Int, 1, "tipo_doc");
             this.DaUsuarios.InsertCommand.Parameters.Add("@nro_doc", System.Data.SqlDbType.Int, 1, "nro_doc");

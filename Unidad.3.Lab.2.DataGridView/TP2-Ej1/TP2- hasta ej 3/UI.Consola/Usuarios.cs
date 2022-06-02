@@ -55,13 +55,13 @@ namespace UI.Consola
         public void ListadoGeneral()
         {
             Console.Clear();
-            foreach (Usuario usr in UsuarioNegocio.GetAll())
+            foreach (Business.Entities.Usuarios usr in UsuarioNegocio.GetAll())
             {
                 MostrarDatos(usr);
             }
         }
 
-        public void MostrarDatos(Usuario usr)
+        public void MostrarDatos(Business.Entities.Usuarios usr)
         {
             Console.WriteLine("Usuario: {0}", usr.ID);
             Console.WriteLine("\t\tNombre: {0}", usr.Nombre);
@@ -81,7 +81,7 @@ namespace UI.Consola
                 Console.Clear();
                 Console.Write("Ingrese el ID del usuario a modificar: ");
                 int ID = int.Parse(Console.ReadLine());
-                Usuario usuario = UsuarioNegocio.GetOne(ID);
+                Business.Entities.Usuarios usuario = UsuarioNegocio.GetOne(ID);
                 Console.Write("Ingrese Nombre: ");
                 usuario.Nombre = Console.ReadLine();
                 Console.Write("Ingrese Apellido: ");
@@ -116,7 +116,7 @@ namespace UI.Consola
 
         public void Agregar()
         {
-            Usuario usuario = new Usuario();
+            Business.Entities.Usuarios usuario = new Business.Entities.Usuarios();
 
             Console.Clear();
             Console.Write("Ingrese Nombre: ");
